@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/12e30d0283.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Web/App Developer, UI/UX Designer</p>
+            <h1>Hi, I'm ,<span>Abhishek Pal</span> <br>From Uttar Pradesh,<br><span>INDIA</span></h1>
+        </div>
+    </div>
+</div>
+ <!-- ---------------about-------------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user2.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I,m Abhishek Pal, a <span>Web/App Developer</span>, who is diligent about his work. Currently pursuing B.Tech with Computer Science & Engineering.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                        <li><span>Web Development</span><br>Web App Development</li>
+                        <li><span>App Development</span><br>Building Android/iOS Apps </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2023-Current</span><br>Web Developer at CodeSoft</li>
+                        <li><span>2023-Current</span><br>Web Developer at Bharat Intern</li>
+                        <li><span>2023-Current</span><br>Web Developer</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2025-Ongoing</span><br>B.Tech from MIT, Meerut</li>
+                        <li><span>2020-21</span><br>Intermediate from CBSE with (85.6%)</li>
+                        <li><span>2018-19</span><br>HighSchool from CBSE with (84.6%) </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- --------------------services-------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>I love to innovate and design websites that are both beautiful and functional. My websites are designed to attract, interact and impress your visitors and turn them into loyal customers.</p>
+                <a href="#portfolio">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>UI/UX</h2>
+                <p>I excel at creating UI/UX designs that enhance user experiences. I pay attention to every detail and design interfaces that are not only stunning but also easy to use and explore.</p>
+                <a href="#portfolio">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>Web/App Design</h2>
+                <p>I combine creativity and functionality to design web apps that are outstanding in quality. I focus on creating web app interfaces that not only display original designs but also ensure a satisfying and enjoyable user experience.</p>
+                <a href="#portfolio">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- --------------------portfolio------------------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>To-Do List</h3>
+                    <p>Meet my carefully designed todo list app: Your best solution for keeping order and getting things done. Easily handle tasks, assign importance, and monitor your achievements with an intuitive interface that makes your day easier. Boost your productivity with this app that blends user-friendly functionality with a stylish, contemporary design.</p>
+                    <a href="https://abhishek9520.github.io/To-Do-List/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Spotify Clone</h3>
+                    <p>A Spotify Clone is a music streaming platform designed to replicate the features and functionalities of the popular music service, Spotify. It offers users the ability to stream a vast library of music, create playlists, and enjoy a personalized music experience.</p>
+                    <a href="https://abhishek9520.github.io/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Calculator</h3>
+                    <p>Use it for calculations that you know are tedious, such as long division; square roots; and addition, subtraction or multiplication of numbers that have several digits.</p>
+                    <a href="https://abhishek9520.github.io/Calculator/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            
+        </div>
+        <div class="work-list" id="hidden-list">
+            <div class="work">
+                <img src="images/work-4.png">
+                <div class="layer">
+                    <h3>Parallax Website</h3>
+                    <p>In addition to the movement of objects, parallax effects include scrolling-triggered animation. As the user scrolls, specific elements may fade in or out, zoom in, or change their appearance. This combination of parallax scrolling and animations adds another layer of interactivity and visual interest to the webpage.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-5.png">
+                <div class="layer">
+                    <h3>Netflix Clone Website</h3>
+                    <p>The Netflix clone project is a web application developed using HTML, CSS, and JavaScript, aiming to replicate the user interface and some features of the popular streaming service, Netflix.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-6.png">
+                <div class="layer">
+                    <h3>Temperature Converter</h3>
+                    <p>A temperature converter is a useful tool that allows you to easily convert between different units of temperature, such as from Celsius to Fahrenheit or from Kelvin to Celsius. This can be done using conversion formulas, which are mathematical relationships between two units.</p>
+                    <a href="https://abhishek9520.github.io/Temperature-Convertor/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            
+        </div>
+        <!-- <div class="work-list" id="hidden-list">
+            <div class="work">
+                <img src="images/work-7.png">
+                <div class="layer">
+                    <h3>Currency Converter</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus dolores vero, animi odio excepturi molestias harum voluptates nesciunt iusto ipsum enim mollitia voluptate fugit minus fuga pariatur dignissimos quidem quae!</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div> -->
+        <a class="btn" id="seeMoreButton">See More</a>
+    </div>
+</div>
+
+<!-- -------------------contact----------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-share"></i> abhishek07236@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> +919520573318</p>
+                <div class="social-icons">
+                    <a href="https://drive.google.com/file/d/1JBqPYJe8j3ceYvtmlpS2ZPwkuCDoEZMJ/view?usp=drive_link"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://twitter.com/abhishek07236?t=YaBwBPU1k6TaYqLj8pxXAw&s=09"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/abhishek-pal-86b291230/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" rtequired>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>copyright © Made by <i class="fa-solid fa-heart"></i>ABHISHEK PAL<i class="fa-solid fa-heart"></i></p>
+    </div>
+</div>
+
+
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+        
+        
+    }
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+    const seeMoreButton = document.getElementById("seeMoreButton");
+    const itemList = document.getElementById("hidden-list");
+    seeMoreButton.addEventListener("click", function () {
+         if (itemList.style.display === "none") {
+            itemList.style.display = "grid"; 
+            seeMoreButton.textContent = "See Less"; 
+    } else {
+            itemList.style.display = "none"; 
+            seeMoreButton.textContent = "See More";
+    }
+});
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyPYVAmWozLNWKfb99qvKxw06AF5i1D_pA3igSGDlYohNWLckywqwEYIxJcyLjhF52UIg/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
